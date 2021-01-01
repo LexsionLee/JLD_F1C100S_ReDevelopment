@@ -1,0 +1,736 @@
+
+BOOT0 is starting
+Boot0 power on pin: port=0 port_num=0 data=0
+init dram , base        is 0x80000000
+init dram , clk         is 152
+init dram , access_mode is 1
+init dram , cs_num      is 0x00000001
+init dram , ddr8_remap  is 0
+init dram , sdr_ddr     is 1
+init dram , bwidth      is 16
+init dram , col_width   is 10
+init dram , row_width   is 13
+init dram , bank_size   is 4
+init dram , cas         is 3
+init dram , size        is 0
+dram init successed,size is 32
+jump to BOOT1
+DBG: boot1 starting!
+DBG: init heap OK, base address is 0x80800000, size is 0x00100000
+begin to init file system
+DBG: init block device OK
+DBG: init mini file system OK
+DBG: mount c partition OK
+0
+jump to kernal
+PasswordInitial +
+PasswordInitial - 
+Mount Parts Thread running.....
+LCD Initial V1.1 by Cary width = 480 height = 960
+[DISP WRN]L297(disp_lcd.c):fetch script data lcd0_para.lcd_pwm_used fail
+L426(disp_clk.c):===================================type=2
+L432(disp_clk.c):pll_freq=297000000 tve_freq=27000000 pre_scale=2
+disp_pll_set sel = 0  lcd_clk_div=-238944256
+spinor partition size is 8192
+partition [D] plug in..
+Mount Parts Thread work now.....
+
+partition [E] plug in..
+.Start Shell from partion 'c'..................................................................................
+Mount Parts Thread work end....
+width = 480, height = 960
+L426(disp_clk.c):===================================type=1
+*divider=10
+sel=0 div=10
+LCDC_DCLK_OFF=-2147483638
+L447(disp_clk.c):pll_freq=300000000 tve_freq=27000000 pre_scale=1
+disp_pll_set sel = 0  lcd_clk_div=10
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd0 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd1 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd8 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd9 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd16 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd17 fail
+b_interlace=0
+lcd_power_used=0 ret=0
+.....................................................................................................................
+.Please press enter key(keypad or irkey) to continue!
+..............................................................
+.....................................................................................................................
+Execute startup script begin..............
+enable device monitor
+SDC 0 init...
+SD card found
+SDC 0 identified successfully
+sdcard device name: SDMMC-DISK:0
+Mount Parts Thread work now.....
+ p1
+ p1
+partition [F] plug in..
+Mount Parts Thread work end....
+------------------------------------------------
+SDMMC monittor send plug-in message to kserver!
+------------------------------------------------
+.....................................................................................................................
+.SYSTEM INFO REPORT  (v1.0 @2008-9-26)                                                                              .
+.....................................................................................................................
+.Clock Info..........................................................................................................
+.   LOSC      = 32768
+.   HOSC      = 24000000
+.   COREPLL   = 408000000
+.   VEPLL     = 210000000
+.   DRAMPLL   = 144000000
+.   AUDIOPLL  = 196571428
+.   VIDEOPLL  = 300000000
+.   CPUCLOCK  = 408000000
+.   AHBCLOCK  = 204000000
+.   APBCLOCK  = 102000000
+.   DRAMCLOCK = 144000000
+.Power Info..........................................................................................................
+.    power driver is not ready!
+.Process/Thread Info.................................................................................................
+.   Name: c:\shell.zgj
+.       ID      : 1
+.       Thread(c0) stack: Addr = c22b0000  size = 4000  used = 528
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: F:\SmartCharger.axf
+.       ID      : 2
+.       Thread(a0) stack: Addr = c234e000  size = 10000  used = 1bc
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\rtc.drv
+.       ID      : 61
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\display.drv
+.       ID      : 63
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\monitor.drv
+.       ID      : 72
+.       Thread(20) stack: Addr = c224b000  size = 800  used = 338
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\spi.drv
+.       ID      : 82
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\twi.drv
+.       ID      : 83
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: d:\drv\sdmmc.drv
+.       ID      : 92
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: \drv\spinor.drv
+.       ID      : 93
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: d:\mod\charset.mod
+.       ID      : a4
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: c:\mod\slib.mod
+.       ID      : e7
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.   Name: ePOS v1.0
+.       ID      : fe
+.       Thread(1) stack: Addr = c20ed000  size = 1000  used = 5e0
+.       Thread(4) stack: Addr = c20ee000  size = 400  used = 68
+.       Thread(1b) stack: Addr = c20f4000  size = 800  used = 80
+.       Thread(1c) stack: Addr = c20f2000  size = 800  used = 80
+.       Thread(1d) stack: Addr = c20f0000  size = 800  used = 80
+.       Thread(1f) stack: Addr = c20cb000  size = 1000  used = dc
+.       Thread(80) stack: Addr = c20dd000  size = 800  used = 3f4
+.       Thread(bf) stack: Addr = c20bd400  size = 1000  used = b4
+.       Thread(fd) stack: Addr = c20b9000  size = 400  used = 70
+.       Thread(fe) stack: Addr = c20b8000  size = 400  used = a4
+.       Heap    : Addr = c4000000  size = 100000  free = f7710
+.Memory info.........................................................................................................
+.   System Page Pool Info............................................................................................
+.       Pages number = 7e40
+.       Pages free   = 67c5
+.....................................................................................................................
+cary gui v2.3
+PasswordInitial +
+PasswordInitial - 
+...............Execute startup script end
+Esh msg: shell main thread: Bye Bye!
+ wavInit success 
+
+ ++ start Reset Air202 Model [1]
+my_http_thread init
+CaryGUI  Initial +
+Graph Initial
+Resource Inital
+Message Initial
+windows Initial
+Timer Initial
+Create Root
+Send Class01  1 0 C400A590
+name = 100.mp4 type = 101
+name = 201.mp4 type = 1
+name = 202.mp4 type = 1
+name = 203.mp4 type = 1
+name = 204.mp4 type = 1
+name = 1.mp4 type = 1
+name = 3.mp4 type = 1
+name = 4.mp4 type = 1
+name = 5.mp4 type = 1
+name = 6.mp4 type = 1
+name = 8.mp4 type = 1
+name = 9.mp4 type = 1
+name = 10.mp4 type = 1
+name = 11.mp4 type = 1
+name = 13.mp4 type = 1
+name = 14.mp4 type = 1
+name = 16.mp4 type = 1
+name = 17.mp4 type = 1
+name = 18.mp4 type = 1
+name = 19.mp4 type = 1
+name = 20.mp4 type = 1
+Video Count = 21
+width = 480, height = 960
+fsOpenFile read settings.dat  error
++++++++++++++++++++++++++++++set_volume = 26
+CaryGUI Initial -
+Send Class01  5 4 0
+.....................................................................................................................
+.SYSTEM INFO REPORT  (v1.0 @2008-9-26)                                                                              .
+.....................................................................................................................
+.Clock Info..........................................................................................................
+.   LOSC      = 32768
+.   HOSC      = 24000000
+.   COREPLL   = 408000000
+.   VEPLL     = 210000000
+.   DRAMPLL   = 144000000
+.   AUDIOPLL  = 196571428
+.   VIDEOPLL  = 300000000
+.   CPUCLOCK  = 408000000
+.   AHBCLOCK  = 204000000
+.   APBCLOCK  = 102000000
+.   DRAMCLOCK = 144000000
+.Power Info..........................................................................................................
+.    power driver is not ready!
+.Process/Thread Info.................................................................................................
+.   Name: c:\shell.zgj
+.       ID      : 1
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: F:\SmartCharger.axf
+.       ID      : 2
+.       Thread(40) stack: Addr = c239f000  size = 1000  used = b8
+.       Thread(60) stack: Addr = c2392000  size = 1000  used = 124
+.       Thread(61) stack: Addr = c239a000  size = 1000  used = 61c
+.       Thread(81) stack: Addr = c2396000  size = 1000  used = 16c
+.       Thread(a0) stack: Addr = c234e000  size = 10000  used = 614
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\rtc.drv
+.       ID      : 61
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\display.drv
+.       ID      : 63
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: d:\drv\audio.drv
+.       ID      : 66
+.       Thread(21) stack: Addr = c22c6000  size = 800  used = b4
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\monitor.drv
+.       ID      : 72
+.       Thread(20) stack: Addr = c224b000  size = 800  used = 338
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: d:\drv\uart.drv
+.       ID      : 80
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\spi.drv
+.       ID      : 82
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\twi.drv
+.       ID      : 83
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: d:\drv\sdmmc.drv
+.       ID      : 92
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: \drv\spinor.drv
+.       ID      : 93
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: d:\mod\charset.mod
+.       ID      : a4
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: c:\mod\slib.mod
+.       ID      : e7
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.   Name: ePOS v1.0
+.       ID      : fe
+.       Thread(1) stack: Addr = c20ed000  size = 1000  used = 5e0
+.       Thread(4) stack: Addr = c20ee000  size = 400  used = 68
+.       Thread(1b) stack: Addr = c20f4000  size = 800  used = 80
+.       Thread(1c) stack: Addr = c20f2000  size = 800  used = 80
+.       Thread(1d) stack: Addr = c20f0000  size = 800  used = 80
+.       Thread(1f) stack: Addr = c20cb000  size = 1000  used = dc
+.       Thread(80) stack: Addr = c20dd000  size = 800  used = 3f4
+.       Thread(bf) stack: Addr = c20bd400  size = 1000  used = cc
+.       Thread(fd) stack: Addr = c20b9000  size = 400  used = 70
+.       Thread(fe) stack: Addr = c20b8000  size = 400  used = bc
+.       Heap    : Addr = c4000000  size = 100000  free = edb30
+.Memory info.........................................................................................................
+.   System Page Pool Info............................................................................................
+.       Pages number = 7e40
+.       Pages free   = 5158
+.....................................................................................................................
+Send Class0C  1 0 C40124F0
+----adc =11 Voltage=999
+ready to work!
+
+ -- success Reset Air202 Model
+plugin uart 2
+open b:\BUS\UART2 device success 22
+-AT[0x2000],size=[4],cmd=[AT
+]
++AT[0x2000],size=[51],ct[
+RDY
+
++CFUN: 1
+
++CPIN: NOT INSERTED
+AT
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x1]
+-AT[0x2010],size=[9],cmd=[AT+CGSN
+]
+Send Class01  19 80011009 1
+----adc =11 Voltage=999
++AT[0x2010],size=[33],ct[AT+CGSN
+862285031930906
+
+OK
+]
+86 22 85 03 19 30 90 61  notifyGPRSMsg [0x80011002], [0x0]
+ notifyGPRSMsg [0x80011009], [0x2]
+-AT[0x2020],size=[8],cmd=[AT+CSQ
+]
++AT[0x2020],size=[26],ct[AT+CSQ
++CSQ: 0,0
+
+OK
+]
+ GPRS RSSI is [ 0 ]
+ notifyGPRSMsg [0x80011008], [0x1]
+ notifyGPRSMsg [0x80011009], [0x3]
+-AT[0x2030],size=[8],cmd=[AT+VER
+]
+Send Class0C  19 80011009 1
++AT[0x2030],size=[38],ct[AT+VER
+AirM2M_V5593_AT_S_TTS
+
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x4]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class01  19 80011002 0
+ID8622850319309061
+Send Class01  19 80011009 2
+Send Class01  19 80011008 1
+Send Class01  19 80011009 3
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class01  19 80011009 4
+Send Class0C  19 80011009 2
+Send Class0C  19 80011009 3
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class0C  19 80011009 4
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+
+ ++ start Reset Air202 Model [2]
+----adc =11 Voltage=999
+
+ -- success Reset Air202 Model
+-AT[0x2000],size=[4],cmd=[AT
+]
++AT[0x2000],size=[52],ct[]
+-AT[0x2000],size=[4],cmd=[AT
+]
++AT[0x2000],size=[9],ct[AT
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x1]
+-AT[0x2010],size=[9],cmd=[AT+CGSN
+]
+Send Class01  19 80011009 1
+Send Class0C  19 80011009 1
++AT[0x2010],size=[33],ct[AT+CGSN
+862285031930906
+
+OK
+]
+86 22 85 03 19 30 90 61  notifyGPRSMsg [0x80011002], [0x0]
+ notifyGPRSMsg [0x80011009], [0x2]
+-AT[0x2020],size=[8],cmd=[AT+CSQ
+]
++AT[0x2020],size=[26],ct[AT+CSQ
++CSQ: 0,0
+
+OK
+]
+ GPRS RSSI is [ 0 ]
+ notifyGPRSMsg [0x80011008], [0x1]
+ notifyGPRSMsg [0x80011009], [0x3]
+-AT[0x2030],size=[8],cmd=[AT+VER
+]
++AT[0x2030],size=[38],ct[AT+VER
+AirM2M_V5593_AT_S_TTS
+
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x4]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class01  19 80011002 0
+ID8622850319309061
+Send Class01  19 80011009 2
+Send Class01  19 80011008 1
+Send Class01  19 80011009 3
+Send Class01  19 80011009 4
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class0C  19 80011009 2
+Send Class0C  19 80011009 3
+Send Class0C  19 80011009 4
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+
+ ++ start Reset Air202 Model [3]
+----adc =11 Voltage=999
+
+ -- success Reset Air202 Model
+-AT[0x2000],size=[4],cmd=[AT
+]
++AT[0x2000],size=[52],ct[]
+-AT[0x2000],size=[4],cmd=[AT
+]
++AT[0x2000],size=[9],ct[AT
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x1]
+-AT[0x2010],size=[9],cmd=[AT+CGSN
+]
+Send Class01  19 80011009 1
+Send Class0C  19 80011009 1
++AT[0x2010],size=[33],ct[AT+CGSN
+862285031930906
+
+OK
+]
+86 22 85 03 19 30 90 61  notifyGPRSMsg [0x80011002], [0x0]
+ notifyGPRSMsg [0x80011009], [0x2]
+-AT[0x2020],size=[8],cmd=[AT+CSQ
+]
++AT[0x2020],size=[26],ct[AT+CSQ
++CSQ: 0,0
+
+OK
+]
+ GPRS RSSI is [ 0 ]
+ notifyGPRSMsg [0x80011008], [0x1]
+ notifyGPRSMsg [0x80011009], [0x3]
+-AT[0x2030],size=[8],cmd=[AT+VER
+]
++AT[0x2030],size=[38],ct[AT+VER
+AirM2M_V5593_AT_S_TTS
+
+OK
+]
+ notifyGPRSMsg [0x80011009], [0x4]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class01  19 80011002 0
+ID86228+AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+x3000],size=
+Send Class01  19 80011009 2
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class01  19 80011008 1
+Send Class01  19 80011009 3
+Send Class01  19 80011009 4
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+-AT[0x3000],size=[10],cmd=[AT++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+Send Class0C  19 80011009 3
+Send Class0C  19 80011009 4
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+-AT[0x3000],size=[10],cmd=[AT+CPIN?
+]
+----adc =10 Voltage=908
++AT[0x3000],size=[18],ct[AT+CPIN?
+ERROR
+]
+
+ ++ start Reset Air202 Model [4]
+

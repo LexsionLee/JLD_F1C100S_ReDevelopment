@@ -1,0 +1,81 @@
+BOOT0 is starting
+Boot0 power on pin: port=0 port_num=0 data=0
+init dram , base        is 0x80000000
+init dram , clk         is 152
+init dram , access_mode is 1
+init dram , cs_num      is 0x00000001
+init dram , ddr8_remap  is 0
+init dram , sdr_ddr     is 1
+init dram , bwidth      is 16
+init dram , col_width   is 10
+init dram , row_width   is 13
+init dram , bank_size   is 4
+init dram , cas         is 3
+init dram , size        is 0
+dram init successed,size is 32
+jump to BOOT1
+DBG: boot1 starting!
+DBG: init heap OK, base address is 0x80800000, size is 0x00100000
+begin to init file system
+DBG: init block device OK
+DBG: init mini file system OK
+DBG: mount c partition OK
+0
+jump to kernal
+PasswordInitial +
+PasswordInitial - 
+Mount Parts Thread running.....
+LCD Initial V1.1 by Cary width = 480 height = 960
+[DISP WRN]L297(disp_lcd.c):fetch script data lcd0_para.lcd_pwm_used fail
+L426(disp_clk.c):===================================type=2
+L432(disp_clk.c):pll_freq=297000000 tve_freq=27000000 pre_scale=2
+disp_pll_set sel = 0  lcd_clk_div=-238944256
+spinor partition size is 8192
+partition [D] plug in..
+Mount Parts Thread work now.....
+
+partition [E] plug in..
+.Start Shell from partion 'c'..................................................................................
+Mount Parts Thread work end....
+width = 480, height = 960
+L426(disp_clk.c):===================================type=1
+*divider=10
+sel=0 div=10
+LCDC_DCLK_OFF=-2147483638
+L447(disp_clk.c):pll_freq=300000000 tve_freq=27000000 pre_scale=1
+disp_pll_set sel = 0  lcd_clk_div=10
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd0 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd1 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd8 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd9 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd16 fail
+[DISP WRN]L350(disp_lcd.c):fetch script data lcd0_para.lcdd17 fail
+b_interlace=0
+lcd_power_used=0 ret=0
+.....................................................................................................................
+.Please press enter key(keypad or irkey) to continue!
+..............................................................
+.....................................................................................................................
+Execute startup script begin..............
+enable device monitor
+Start Internal story
+cary gui internal card v2.0
+ wavInit success 
+CaryGUI  Initial +
+Graph Initial
+Resource Inital
+Message Initial
+windows Initial
+Timer Initial
+Create Root
+Send Class01  1 0 C4008B28
+Cannot open station history
+Video Count = 0
+width = 480, height = 960
+...............Execute startup script end
+EsCaryGUI Initial -
+Send Class01  5 0 0
+TestTouch_Create +
+Send Class10  1 0 C4007960
+nd Classshell main thread: Bye Bye!
+TestTouch_Create -

@@ -1,0 +1,51 @@
+Id,Time[s],1:I²C: Address/Data
+0,2.33022,Start
+1,2.33133,Write
+2,2.33035,Address write: 0F
+3,2.33145,ACK
+4,2.33157,Data write: 80
+5,2.3327,NACK
+6,2.33283,Data write: 3A
+7,2.33393,NACK
+8,2.33407,Start repeat
+9,2.33455,Start repeat
+10,2.34108,Read
+11,2.34015,Address read: 2A
+12,2.34125,ACK
+13,2.3414,Data read: 80
+14,2.3425,NACK
+15,2.34262,Data read: AB
+16,2.34375,ACK
+17,2.34388,Data read: 67
+18,2.34498,NACK
+19,2.3451,Data read: F4
+20,2.34623,ACK
+21,2.34635,Data read: 14
+22,2.34745,ACK
+23,2.34757,Data read: 40
+24,2.3487,NACK
+25,6.1737,Stop
+26,6.3228,Start
+27,6.32408,Read
+28,6.32295,Address read: 1E
+29,6.32423,NACK
+30,6.32438,Data read: 28
+31,6.32565,NACK
+32,6.3258,Data read: A3
+33,6.32708,NACK
+34,6.32793,Start repeat
+35,6.3339,Read
+36,6.33285,Address read: 13
+37,6.33413,ACK
+38,6.33427,Data read: 04
+39,6.33555,ACK
+40,6.3357,Data read: C1
+41,6.33698,NACK
+42,6.33713,Data read: 1F
+43,6.33842,NACK
+44,6.33858,Data read: 70
+45,6.33983,ACK
+46,6.33997,Data read: 55
+47,6.34125,ACK
+48,6.3414,Data read: 01
+49,6.34268,ACK
